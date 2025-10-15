@@ -18,8 +18,11 @@ A modern, responsive Svelte web application for the HealthVault medical chat sys
    npm install
    ```
 
-2. **Configure API Key:**
-   Edit `src/lib/stores/auth.js` and `src/lib/stores/chat.js` to replace `'your-api-key-here'` with your actual API key from the backend.
+2. **Configure Environment Variables:**
+   ```bash
+   cp .env.example .env
+   # Edit .env and update VITE_API_KEY with your actual API key
+   ```
 
 3. **Start development server:**
    ```bash
@@ -101,15 +104,40 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Run deployment setup
+./setup-deployment.sh
 ```
 
 ## Deployment
 
-The application can be deployed to any static hosting service:
+### Quick Deploy to Render
 
-- **Vercel:** Connect your repository for automatic deployments
-- **Netlify:** Drag and drop the `dist` folder after running `npm run build`
-- **GitHub Pages:** Use GitHub Actions to build and deploy
+1. **Run setup script:**
+   ```bash
+   ./setup-deployment.sh
+   ```
+
+2. **Push to Git:**
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+3. **Deploy on Render:**
+   - Connect your repository at [render.com](https://render.com)
+   - Render will auto-detect the configuration
+   - Set environment variables in dashboard
+   - Deploy!
+
+For detailed instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Other Hosting Options
+
+- **Vercel:** Connect repository for automatic deployments
+- **Netlify:** Drag and drop the `dist` folder
+- **GitHub Pages:** Use GitHub Actions for CI/CD
 
 ## Contributing
 

@@ -97,11 +97,11 @@ function createChatStore() {
         });
 
         // Send to API
-        const response = await fetch('https://google-hackathon-henna.vercel.app/chat/chat', {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/chat/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'your-api-key-here', // Replace with actual API key
+            'x-api-key': import.meta.env.VITE_API_KEY,
             'Authorization': `Bearer ${token}`
           },
           body: JSON.stringify({ user_input: message })

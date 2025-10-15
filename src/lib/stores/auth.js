@@ -19,11 +19,11 @@ function createAuthStore() {
       update(state => ({ ...state, isLoading: true, error: null }));
       
       try {
-        const response = await fetch('https://google-hackathon-henna.vercel.app/auth/login', {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/auth/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'your-api-key-here' // Replace with actual API key
+            'x-api-key': import.meta.env.VITE_API_KEY
           },
           body: JSON.stringify({ email, password })
         });
@@ -71,11 +71,11 @@ function createAuthStore() {
       update(state => ({ ...state, isLoading: true, error: null }));
       
       try {
-        const response = await fetch('https://google-hackathon-henna.vercel.app/auth/register', {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/auth/register`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'your-api-key-here' // Replace with actual API key
+            'x-api-key': import.meta.env.VITE_API_KEY
           },
           body: JSON.stringify({ name, email, password })
         });
