@@ -90,7 +90,7 @@
     
     <!-- Disclaimer -->
     <p class="text-xs text-gray-500 text-center mt-2">
-      HealthVault provides medicine information only. Always consult healthcare professionals for medical advice.
+      MediHelp provides medicine information only. Always consult healthcare professionals for medical advice.
     </p>
   </div>
 </div>

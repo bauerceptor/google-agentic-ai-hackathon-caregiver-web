@@ -1,7 +1,7 @@
 {
-  "name": "healthvault-web",
+  "name": "medihelp-web",
   "version": "1.0.0",
-  "description": "HealthVault Medical Chat Web Application",
+  "description": "MediHelp Medical Chat Web Application",
   "type": "module",
   "scripts": {
     "dev": "vite",

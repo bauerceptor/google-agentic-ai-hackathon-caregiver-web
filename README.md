@@ -1,6 +1,6 @@
-# HealthVault Web Frontend
+# MediHelp Web Frontend
 
-A modern, responsive Svelte web application for the HealthVault medical chat system.
+A modern, responsive Svelte web application for the MediHelp medical chat system.
 
 ## Features
 

@@ -77,8 +77,8 @@
       </h1>
       <p class="text-gray-600">
         {mode === 'login' 
-          ? 'Sign in to continue to HealthVault' 
-          : 'Join HealthVault today'}
+          ? 'Sign in to continue to MediHelp' 
+          : 'Join MediHelp today'}
       </p>
     </div>
 

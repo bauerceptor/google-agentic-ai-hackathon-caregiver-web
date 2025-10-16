@@ -127,7 +127,7 @@
 </script>
 
 <svelte:head>
-  <title>HealthVault - Your Medical Assistant</title>
+  <title>MediHelp - Your Medical Assistant</title>
   <meta name="description" content="Get reliable medical information and chat with our AI medical assistant" />
 </svelte:head>
 
@@ -197,7 +197,7 @@
               </div>
               <div>
                 <h1 class="font-semibold text-gray-900">
-                  {currentConversation?.title || 'HealthVault Chat'}
+                  {currentConversation?.title || 'MediHelp Chat'}
                 </h1>
                 {#if currentConversation}
                   <p class="text-xs text-gray-500">
@@ -238,7 +238,7 @@
                 <Heart class="w-8 h-8 text-white" />
               </div>
               <h2 class="text-2xl font-bold text-gray-900 mb-3">
-                Welcome to HealthVault!
+                Welcome to MediHelp!
               </h2>
               <p class="text-gray-600 mb-6">
                 Ask me about any medicine and I'll help you with detailed information about composition, uses, side effects, and user reviews.

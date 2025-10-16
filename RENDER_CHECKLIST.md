@@ -1,6 +1,6 @@
 # 🚀 Render Deployment Checklist
 
-Use this checklist to ensure your HealthVault web frontend deploys successfully to Render.
+Use this checklist to ensure your MediHelp web frontend deploys successfully to Render.
 
 ## ✅ Pre-Deployment Checklist
 
@@ -36,7 +36,7 @@ Use this checklist to ensure your HealthVault web frontend deploys successfully 
 - [ ] Connect your repository
 
 ### 2. Configure Build Settings
-- [ ] **Name**: `healthvault-web` (or your choice)
+- [ ] **Name**: `medihelp-web` (or your choice)
 - [ ] **Branch**: `main`
 - [ ] **Build Command**: `npm install && npm run build`
 - [ ] **Publish Directory**: `dist`
@@ -133,4 +133,4 @@ Once deployed:
 
 **🎉 Congratulations!** 
 
-Your HealthVault web frontend should now be live and accessible to users worldwide!
+Your MediHelp web frontend should now be live and accessible to users worldwide!
